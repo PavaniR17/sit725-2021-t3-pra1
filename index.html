@@ -3,6 +3,7 @@
 <html lang="en">                         
 <head>                                  
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-sacle-1">
 
     <title>SIT725</title>             
@@ -11,23 +12,20 @@
    
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="main.css">
+
 
 </head>
 
-
-<body class="Dark-theme">
+<body style="background-color:powderblue;"> 
      
-    <h1 id="heading"class="center-align">SIT725</h1>
+    <h1 id="heading"class="center-align", style="color: mediumvioletred;">SIT725</h1>
 
     <div class="container">
-        <h5>Introduction:</h5>
-        <p>"My name is Pavani, I'm currently pusuing Masters of Information in IT with Data Analytics as specialisation. My main strengths are Data Visualization using Tableau and Power BI.
-            My main aim is to become successful as Data Analyst.
-        </p>
 
-        <h5>Task List:</h5>
-        <ul>
+        <h5 style="color: mediumvioletred;">Task List:</h5>
+
+        <ul style="list-style-type: circle;">
+
             <li class="list">Design your services Page</li>
 
             <li class="list">Complete JS course</li>
@@ -35,22 +33,30 @@
             <li class="list">Read the Web page</li>
            
             <li class="list">Rest and API</li>
-            
+
         </ul>
 
-        <div>
-            <button class="btn">Dark</button>
-        </div>
-        <script src="js/script.js"></script>
-    
+       
+        <script>
+            function myFunction() {
+                 document.getElementById("heading").style.fontSize = "25px"; 
+                document.getElementById("heading").style.color = "red";
+                document.getElementById("heading").style.backgroundColor = "yellow";        
+                  
+            }
+        </script>
 
-    </div>
+        <button  type="button" onclick="myFunction()">Click Me</button>
 
-     <script>alert('Hello World')</script>
+          
+
+      <script>alert('Hello World')</script>
     
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="js/script.js"></script>
-      <noscript>You need to enable JavaScript to view the full site.</noscript>
+        
+
+</body>
 </body>
 </html>
+
